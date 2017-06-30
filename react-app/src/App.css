@@ -1,0 +1,22 @@
+.App {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.App_score {
+  color: #3498db;
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.App_button {
+  background: #3498db;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
