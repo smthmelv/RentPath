@@ -14,6 +14,8 @@ export default class App extends Component {
       data: [],
       score: 0
     }
+
+    this.printScore = this.printScore.bind(this);
   }
 
   componentDidMount() {
@@ -32,11 +34,11 @@ export default class App extends Component {
       }));
   }
 
-  printScore = (data) => {
+  printScore(data) {
     const { isLoading } = this.state;
     let score = 0;
 
-    isLoading && data.forEach(elem => {
+    !isLoading && data.forEach(elem => {
       switch(elem){
         case "PushEvent":
           score += 5;
